@@ -13,9 +13,9 @@ async function getData(url) {
     let author = json.quoteAuthor;
     if (author.length < 2)
       author = `${sample([
-        'Автор не известен',
-        'Авторство не известно',
-        'Мыслитель не известен'
+        'Автор неизвестен',
+        'Авторство неизвестно',
+        'Мыслитель неизвестен'
       ])}`;
     return `${quote} (${author}). `;
   } catch (err) {
