@@ -144,9 +144,9 @@ module.exports.skill = async (event) => {
               }
             },
             {
-              title: 'Выход',
+              title: 'Выйти',
               action: {
-                text: 'Выход',
+                text: 'Выйти',
                 type: 'text'
               }
             }
@@ -213,9 +213,9 @@ module.exports.skill = async (event) => {
                   }
                 },
                 {
-                  title: 'Выход',
+                  title: 'Выйти',
                   action: {
-                    text: 'Выход',
+                    text: 'Выйти',
                     type: 'text'
                   }
                 }
