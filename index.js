@@ -174,7 +174,7 @@ module.exports.skill = async (event) => {
         };
       }
 
-      // Возвращаем наш ответ в Салют (с пометкой: NSWER_TO_USER):
+      // Возвращаем наш ответ в Салют (с пометкой: ANSWER_TO_USER):
       return {
         body: JSON.stringify({
           messageName: 'ANSWER_TO_USER',
@@ -188,7 +188,7 @@ module.exports.skill = async (event) => {
       // RUN_APP означает, что юзер только-что запустил смартап. 
       // Сообщение (msg) с приветствием, мы уже инициализировали в начале кода:
     } else if (body.messageName == 'RUN_APP') {
-      // Возвращаем нащ ответ в Салют (с пометкой: NSWER_TO_USER):
+      // Возвращаем нащ ответ в Салют (с пометкой ANSWER_TO_USER):
       return {
         body: JSON.stringify({
           messageName: 'ANSWER_TO_USER',
@@ -228,7 +228,7 @@ module.exports.skill = async (event) => {
         })
       };
     }
-    // В случае ошибки возвращаем ответ в Салют с пометкой: ERROR:
+    // В случае ошибки возвращаем ответ в Салют с пометкой ERROR:
   } catch (err) {
     console.log(err);
     return {
